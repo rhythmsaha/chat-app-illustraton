@@ -19,6 +19,10 @@ input:focus {
     outline: none;
 }
 
+.input::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+
 .sendButton {
     cursor: pointer;
     padding: 0.5rem;

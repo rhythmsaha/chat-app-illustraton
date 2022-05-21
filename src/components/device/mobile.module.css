@@ -3,6 +3,7 @@
     border-radius: 1.5rem;
     max-width: 300px;
     background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .notch {
