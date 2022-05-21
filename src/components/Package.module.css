@@ -1,0 +1,40 @@
+.package {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    background: rgb(233, 66, 255);
+    background: linear-gradient(
+        270deg,
+        var(--light-violet) 0%,
+        var(--light-magenta) 100%
+    );
+
+    padding: 0.5rem;
+    gap: 0.3rem;
+    border-radius: 0.7rem;
+    border-bottom-left-radius: 0;
+}
+
+.radio {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 2px solid var(--very-light-magenta);
+    border-radius: 50%;
+}
+
+.text {
+    font-size: 10px;
+    color: hsl(270, 20%, 96%, 0.8);
+    flex: 1;
+}
+
+.price {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}

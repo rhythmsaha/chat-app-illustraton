@@ -1,13 +1,72 @@
+:root {
+    /* Primary */
+    /* text */
+    --pale-violet: hsl(276, 100%, 81%);
+    --Moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+
+    /* Gradient */
+    /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /* Secondery */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Rubik", sans-serif;
+    background: var(--light-grayish-violet);
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    background: rgb(233, 66, 255);
+    background: linear-gradient(
+        10deg,
+        var(--light-violet) 0%,
+        var(--light-magenta) 100%
+    );
+    border-radius: 0 0 15rem 15rem;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: -50%;
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    background: var(--light-magenta);
+    opacity: 0.05;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }

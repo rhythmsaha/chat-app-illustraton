@@ -1,0 +1,19 @@
+.Message {
+    background: hsla(276, 100%, 81%, 0.15);
+    color: var(--Moderate-violet);
+    padding: 0.7rem 0.8rem;
+    border-radius: 1rem 1rem 1rem 0;
+    font-size: 10px;
+    max-width: 70%;
+}
+
+.MessageSentByMe {
+    margin-left: auto;
+    color: var(--desaturated-dark-violet);
+    background: var(--white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem 1rem 0 1rem;
+    padding: 0.7rem 0.8rem;
+    font-size: 10px;
+    max-width: 70%;
+}
